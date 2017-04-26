@@ -49,7 +49,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-// app.use('/api', require('./routes/api'));
+app.use('/api', require('./routes/api'));
 
 // Start server
 const port = process.env.PORT || 3000;
